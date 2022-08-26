@@ -6,19 +6,15 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
 }
-  html {
-
-    background-color: #26ff00;
-    height: 100%;
+html {
+  height: 100%;
   width: 100%;
-  
+}
 
-  }
-  body {
-    height: 100%;
-    background-color: blue;
-    width: 100%;
-  }
+body {
+  height: 100%;
+  width: 100%;
+}
   
   
   `

@@ -1,8 +1,9 @@
 import { useJsApiLoader, GoogleMap } from '@react-google-maps/api'
+import { StyledMap } from '../style/Map.styled'
 
 const center = {
-	lat: 48,
-	lng: 2
+	lat: 48.12,
+	lng: 2.1
 }
 export const CompanyMap = () => {
 	const { isLoaded } = useJsApiLoader({
@@ -14,10 +15,12 @@ export const CompanyMap = () => {
 		return errorMessage
 	}
 	return (
-		<GoogleMap
-			center={center}
-			zoom={10}
-			mapcointainerstyle={{ width: '900px', height: '900px	' }}
-		></GoogleMap>
+		<StyledMap>
+			<GoogleMap
+				center={center}
+				zoom={10}
+				mapContainerStyle={{ height: '100%', width: '100%' }}
+			></GoogleMap>
+		</StyledMap>
 	)
 }
