@@ -1,12 +1,15 @@
-// import { CompanyList } from './components/companyList'
+import { GlobalStyle } from './globalStyle'
+import { CompanyMap } from './components/googleMaps'
 import FetchData from './components/fetchData'
 
 function App() {
 	return (
-		<div className='App'>
+		<>
+			<GlobalStyle />
 			<h1>Bedriftregister</h1>
 			<FetchData />
-		</div>
+			<CompanyMap />
+		</>
 	)
 }
 
