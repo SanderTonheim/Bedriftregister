@@ -1,5 +1,5 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
-export const StyledLi = styled.li `
-  border-bottom: 3px solid black;
+export const StyledLi = styled.li`
+	list-style-type: none;
 `

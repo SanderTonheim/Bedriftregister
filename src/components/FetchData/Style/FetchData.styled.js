@@ -1,11 +1,8 @@
 import styled from 'styled-components'
 
-export const StyledFetchDataContainer = styled.div`
+export const StyledFetchDataContainer = styled.ul`
 	height: auto;
 	width: 100%;
-
-	li {
-		list-style-type: none;
-		padding: 1rem 0;
-	}
+	display: flex;
+	flex-direction: column;
 `

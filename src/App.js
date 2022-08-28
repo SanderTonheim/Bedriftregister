@@ -8,7 +8,7 @@ function App() {
 		<StyledContentContainer>
 			<GlobalStyle />
 			<h1>Bedriftregister</h1>
-			<FetchData />
+			<FetchData />	
 			<CompanyMap />
 		</StyledContentContainer>
 	)
