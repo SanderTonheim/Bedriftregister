@@ -1,3 +1,6 @@
+import { StyledFetchDataContainer } from './Style/FetchData.styled'
+import { StyledLi } from './../FetchData/Style/FetchData.li.styled'
+
 function FetchData() {
 	// Select the DOM-element, so that you can replace it with content
 	let PROJECT_ID = 'oans3nsr'
@@ -22,6 +25,7 @@ function FetchData() {
 				result.forEach((bedrift) => {
 					// create a list element for each animal
 					let listItem = document.createElement('li')
+
 					// add the company name as the text content
 					listItem.textContent = bedrift?.name
 					// add the item to the list
@@ -32,43 +36,12 @@ function FetchData() {
 	}
 	getNames()
 
-	// .then(json.stringify())
-	// .then(({ result }) => {
-	// 	// get the list element, and the first item
-	// 	let list = document.querySelector('ul')
-	// 	let firstListItem = document.querySelector('ul li')
-
-	// 	if (result.length > 0) {
-	// 		// remove the placeholder content
-	// 		list.removeChild(firstListItem)
-
-	// 		result.forEach((bedrift) => {
-	// 			// create a list element for each animal
-	// 			let listItem = document.createElement('li')
-
-	// 			// add the company name as the text content
-	// 			listItem.textContent = bedrift?.name
-
-	// 			// add the item to the list
-	// 			list.appendChild(listItem)
-	// 		})
-	// 		console.log(result)
-	// 	}
-	// })
-	// .catch((err) => console.error(err))
-
 	return (
-		<div>
-			<header>
-				<h1>Bedriftregister</h1>
-			</header>
-			<main>
-				<h2>Animals</h2>
-				<ul>
-					<li>Loading animals…</li>
-				</ul>
-			</main>
-		</div>
+		<StyledFetchDataContainer>
+			<ul>
+				<StyledLi>Loading animals…</StyledLi>
+			</ul>
+		</StyledFetchDataContainer>
 	)
 }
 
