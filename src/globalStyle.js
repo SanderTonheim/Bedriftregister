@@ -24,5 +24,13 @@ StyledLi {
   padding: 1rem 4rem;
 }
 
+Collapsible {
+  width: 5rem;
+  height: 2rem;
+  border: 3px solid black;
+}
+
+
+
 
 `
