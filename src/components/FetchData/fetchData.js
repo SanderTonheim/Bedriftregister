@@ -1,4 +1,4 @@
-import { StyledLi, StyledUl, StyledButton} from './Style/FetchData.styled'
+import { StyledLi, StyledUl } from './Style/FetchData.styled'
 
 function FetchData() {
 	// Select the DOM-element, so that you can replace it with content
@@ -12,9 +12,10 @@ function FetchData() {
 	// fetch the content
 	fetch(URL)
 		.then((res) => res.json())
-		.then(({ result }) => {
+		.then(({result}) => {
+			console.log(result)
 			// get the list element, and the first item
-			let list = document.querySelector(StyledUl)
+			const list = document.querySelector(StyledUl)
 			console.log(list, 'ok')
 			let firstListItem = document.querySelector(StyledLi)
 			console.log(firstListItem, 'ok')
@@ -25,16 +26,13 @@ function FetchData() {
 				result.forEach((bedrift) => {
 					// create a list element for each animal
 					const listItem = document.createElement('StyledLi')
-					const btn = document.createElement('StyledButton')
 
-					// add the animal name as the text content
-					btn.textContent = 'Les mer'
+					// add the company name as the text content
 					listItem.textContent = bedrift.name
 					console.log(listItem, 'ok')
 
 					// add the item to the list
 					list.appendChild(listItem)
-					listItem.appendChild(btn)
 					console.log(list.appendChild + 'append ok')
 					// console.log(btn)
 				})
