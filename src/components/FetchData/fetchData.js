@@ -1,6 +1,4 @@
-import { StyledFetchDataContainer } from './Style/FetchData.styled'
-import { StyledLi } from './../FetchData/Style/FetchData.li.styled'
-
+import { StyledLi, StyledUl, StyledButton} from './Style/FetchData.styled'
 
 function FetchData() {
 	// Select the DOM-element, so that you can replace it with content
@@ -16,7 +14,7 @@ function FetchData() {
 		.then((res) => res.json())
 		.then(({ result }) => {
 			// get the list element, and the first item
-			let list = document.querySelector(StyledFetchDataContainer)
+			let list = document.querySelector(StyledUl)
 			console.log(list, 'ok')
 			let firstListItem = document.querySelector(StyledLi)
 			console.log(firstListItem, 'ok')
@@ -26,23 +24,28 @@ function FetchData() {
 				list.removeChild(firstListItem)
 				result.forEach((bedrift) => {
 					// create a list element for each animal
-					const listItem = document.createElement('li')
-					// console.log(listItem, 'ok');
+					const listItem = document.createElement('StyledLi')
+					const btn = document.createElement('StyledButton')
 
 					// add the animal name as the text content
-					const companyName = listItem.textContent = bedrift.name
-					console.log(listItem,companyName, 'ok')
+					btn.textContent = 'Les mer'
+					listItem.textContent = bedrift.name
+					console.log(listItem, 'ok')
 
 					// add the item to the list
 					list.appendChild(listItem)
-					console.log(list.appendChild+'append ok');
+					listItem.appendChild(btn)
+					console.log(list.appendChild + 'append ok')
+					// console.log(btn)
 				})
 			}
 		})
 	return (
-		<StyledFetchDataContainer>
-			<StyledLi>animal loading</StyledLi>
-		</StyledFetchDataContainer>
+		<StyledUl>
+			<StyledLi>
+				<p>Company loading</p>
+			</StyledLi>
+		</StyledUl>
 	)
 }
 

@@ -15,8 +15,14 @@ body {
   height: 100%;
   width: 100%;
 }
-  
 
+StyledLi {
+	border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+}
 
 
 `

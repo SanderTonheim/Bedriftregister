@@ -18,7 +18,7 @@ export const CompanyMap = () => {
 		<StyledMap>
 			<GoogleMap
 				center={center}
-				zoom={10}
+				zoom={15}
 				mapContainerStyle={{ height: '100%', width: '100%' }}
 			>
 				<Marker position={center} />

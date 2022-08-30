@@ -1,3 +1,5 @@
+import { number } from "prop-types"
+
 export default {
 	name: 'bedrift',
 	type: 'document',
