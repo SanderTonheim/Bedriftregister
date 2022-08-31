@@ -7,29 +7,48 @@ export const GlobalStyle = createGlobalStyle`
   padding: 0;
 }
 html {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
 body {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
-StyledLi {
-	border-bottom: 2px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 4rem;
+
+.collapsible .content-parent {
+  height: 0rem;
+  overflow: hidden;
+  transition: height ease 0.3s;
+  border: black solid 1px;
+  display: flex;;
+  
 }
 
-Collapsible {
-  width: 5rem;
-  height: 2rem;
-  border: 3px solid black;
+.collapsible .content-parent.show{
+  height: 100%;
+  width: 100%;
+  
 }
 
+.MapStyle {
+  height: 20rem;
+  min-width: 50%;
+  max-width: 50%;
+}
+
+.company-text {
+  max-width: 40%;
+  margin: auto 0;
+  > h1 {
+   text-align: center;
+   margin: 0 auto;
+  }
+  > p {
+    margin-top: 2rem;
+  }
+}
 
 
 
