@@ -1,3 +1,4 @@
+import { CompanyMap } from './googleMaps'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { Collapsible } from './collapsible'
@@ -29,14 +30,19 @@ function FetchData() {
 			{data.map((companys) => {
 				return (
 					<Collapsible>
-						<h1>{companys.name}</h1>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Necessitatibus natus ipsa recusandae exercitationem nulla
-							praesentium, delectus vitae laboriosam dolorum veniam dolorem
-							doloremque voluptatibus nemo reprehenderit nam facilis nobis sint
-							aliquam?
-						</p>
+						<div className='company-text'>
+							<h1>{companys.name}</h1>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Necessitatibus natus ipsa recusandae exercitationem nulla
+								praesentium, delectus vitae laboriosam dolorum veniam dolorem
+								doloremque voluptatibus nemo reprehenderit nam facilis nobis
+								sint aliquam?
+							</p>
+						</div>
+						<div className='map'>
+							<CompanyMap />
+						</div>
 					</Collapsible>
 				)
 			})}

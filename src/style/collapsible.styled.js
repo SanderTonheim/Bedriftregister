@@ -11,4 +11,5 @@ export const StyledContent = styled.div`
 	display: flex;
 	justify-content: space-between;
 	margin: 2rem 2rem;
-`
+
+	`

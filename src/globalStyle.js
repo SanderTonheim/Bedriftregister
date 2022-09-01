@@ -28,27 +28,34 @@ body {
 }
 
 .collapsible .content-parent.show{
-  height: 30rem;
+  height:20rem;
   width: 100%;
   
 }
-
-.MapStyle {
-  height: 20rem;
-  min-width: 50%;
-  max-width: 50%;
+.map {
+  height: 100%;
+  width: 50%;
 }
 
+.MapStyle {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  min-width: 50%;
+  height: 100%;
+  margin: 0%;
+  }
+
 .company-text {
-  max-width: 40%;
-  margin: auto 0;
-  > h1 {
-   text-align: center;
-   margin: 0 auto;
-  }
-  > p {
-    margin-top: 2rem;
-  }
+  display: flex;
+  gap: 2rem;
+  height: 100%;
+  max-width: 50%;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
