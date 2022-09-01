@@ -6,7 +6,7 @@ export const StyledButton = styled.button`
 	margin: 1rem 0;
 `
 export const StyledContent = styled.div`
-	height: 100%;
+	height: 26rem;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;

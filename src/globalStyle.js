@@ -17,8 +17,9 @@ body {
 }
 
 
+
 .collapsible .content-parent {
-  height: 0rem;
+  height: 0px;
   overflow: hidden;
   transition: height ease 0.3s;
   border: black solid 1px;
@@ -27,7 +28,7 @@ body {
 }
 
 .collapsible .content-parent.show{
-  height: 100%;
+  height: 30rem;
   width: 100%;
   
 }
