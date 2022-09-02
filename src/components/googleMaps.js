@@ -18,6 +18,12 @@ export const CompanyMap = () => {
 				center={center}
 				zoom={15}
 				mapContainerStyle={{ height: '100%', width: '100%' }}
+				options={{
+					zoomControl: false,
+					mapTypeControl: false,
+					fullscreenControl: false,
+					streetViewControl: false,
+				}}
 			>
 				<Marker position={center} />
 			</GoogleMap>
