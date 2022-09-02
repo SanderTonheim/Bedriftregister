@@ -19,21 +19,28 @@ body {
 .list-items {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.site-content {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.collapsible {
+  border-bottom: black solid ;
 }
 
 .collapsible .content-parent {
   height: 0px;
   overflow: hidden;
   transition: height ease 0.3s;
-  border: black solid 1px;
-  display: flex;;
 }
 
 .collapsible .content-parent.show{
-  height:100%;
+  height:15rem;
   width: 100%;
-  margin: 0%;
-  
+padding-bottom: 1rem;
 }
 
 .map {
@@ -48,12 +55,8 @@ body {
 
 
 .company-text {
-  display: flex;
-  gap: 1rem;
   height: 100%;
   max-width: 50%;
-  flex-direction: column;
-  justify-content: center;
 }
 
 

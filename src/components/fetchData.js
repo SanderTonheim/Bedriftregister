@@ -28,12 +28,11 @@ function FetchData() {
 	}, [])
 
 	return (
-		<div>
+		<div className='site-content'>
 			{data.map((companys) => {
 				return (
 					<Collapsible name={companys.name}>
 						<div className='company-text'>
-							<h1>{companys.name}</h1>
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
 								Necessitatibus natus ipsa recusandae exercitationem nulla

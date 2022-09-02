@@ -7,7 +7,9 @@ function App() {
 		<StyledContentContainer>
 			<GlobalStyle />
 			<h1>Bedrift register</h1>
-			<FetchData />
+			<div className='site-content'>
+				<FetchData />
+			</div>
 		</StyledContentContainer>
 	)
 }
