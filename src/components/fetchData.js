@@ -16,6 +16,8 @@ function FetchData() {
 
 	// fetch the content
 
+	// const companyName = res.data.
+
 	const getData = () => {
 		axios.get(URL).then((res) => {
 			setdata(res.data.result)
@@ -29,7 +31,7 @@ function FetchData() {
 		<div>
 			{data.map((companys) => {
 				return (
-					<Collapsible>
+					<Collapsible name={companys.name}>
 						<div className='company-text'>
 							<h1>{companys.name}</h1>
 							<p>

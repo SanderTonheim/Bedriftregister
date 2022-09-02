@@ -16,7 +16,10 @@ body {
   width: 100%;
 }
 
-
+.list-items {
+  display: flex;
+  justify-content: space-between;
+}
 
 .collapsible .content-parent {
   height: 0px;
@@ -24,14 +27,15 @@ body {
   transition: height ease 0.3s;
   border: black solid 1px;
   display: flex;;
-  
 }
 
 .collapsible .content-parent.show{
-  height:20rem;
+  height:100%;
   width: 100%;
+  margin: 0%;
   
 }
+
 .map {
   height: 100%;
   width: 50%;
@@ -42,16 +46,10 @@ body {
   height: 100%;
 }
 
-.content {
-  display: flex;
-  min-width: 50%;
-  height: 100%;
-  margin: 0%;
-  }
 
 .company-text {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   height: 100%;
   max-width: 50%;
   flex-direction: column;
