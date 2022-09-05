@@ -30,17 +30,11 @@ function FetchData() {
 	return (
 		<div className='site-content'>
 			{data.map((companys) => {
-				// console.log(companys.latitude)
+				console.log(companys.Text)
 				return (
 					<Collapsible name={companys.name}>
 						<div className='company-text'>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Necessitatibus natus ipsa recusandae exercitationem nulla
-								praesentium, delectus vitae laboriosam dolorum veniam dolorem
-								doloremque voluptatibus nemo reprehenderit nam facilis nobis
-								sint aliquam?
-							</p>
+							<p>{companys.Text}</p>
 						</div>
 						<div className='map'>
 							<CompanyMap

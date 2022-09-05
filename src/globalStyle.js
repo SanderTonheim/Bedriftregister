@@ -40,7 +40,7 @@ body {
 .collapsible .content-parent.show{
   height:15rem;
   width: 100%;
-padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .map {
@@ -57,8 +57,9 @@ padding-bottom: 1rem;
 .company-text {
   height: 100%;
   max-width: 50%;
+  margin-right: 2rem;
+  
+
 }
-
-
 
 `

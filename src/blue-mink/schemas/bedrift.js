@@ -15,6 +15,10 @@ export default {
 		{
 			name: 'longetude',
 			type: 'number'
+		},
+		{
+			name: 'Text',
+			type: 'text'
 		}
 	]
 }
