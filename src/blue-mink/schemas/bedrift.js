@@ -1,5 +1,3 @@
-import { number } from "prop-types"
-
 export default {
 	name: 'bedrift',
 	type: 'document',
@@ -9,6 +7,14 @@ export default {
 			name: 'name',
 			type: 'string',
 			title: 'Name'
+		},
+		{
+			name: 'latitude',
+			type: 'number'
+		},
+		{
+			name: 'longetude',
+			type: 'number'
 		}
 	]
 }

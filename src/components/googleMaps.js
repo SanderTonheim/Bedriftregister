@@ -1,10 +1,8 @@
 import { useJsApiLoader, GoogleMap, Marker } from '@react-google-maps/api'
-const center = {
-	lat: 60.3881,
-	lng: 5.3318
-}
 
-export const CompanyMap = () => {
+export const CompanyMap = ({ latitude, longetude }) => {
+	const Cordinates = { lat: latitude, lng: longetude }
+
 	const { isLoaded } = useJsApiLoader({
 		googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
 	})
@@ -12,20 +10,21 @@ export const CompanyMap = () => {
 		const errorMessage = 'faild to load'
 		return errorMessage
 	}
+	console.log(Cordinates)
 	return (
 		<div className='MapStyle'>
 			<GoogleMap
-				center={center}
+				center={Cordinates}
 				zoom={15}
 				mapContainerStyle={{ height: '100%', width: '100%' }}
 				options={{
 					zoomControl: false,
 					mapTypeControl: false,
 					fullscreenControl: false,
-					streetViewControl: false,
+					streetViewControl: false
 				}}
 			>
-				<Marker position={center} />
+				<Marker position={Cordinates} />
 			</GoogleMap>
 		</div>
 	)

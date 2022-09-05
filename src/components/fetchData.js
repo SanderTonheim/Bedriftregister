@@ -30,6 +30,7 @@ function FetchData() {
 	return (
 		<div className='site-content'>
 			{data.map((companys) => {
+				// console.log(companys.latitude)
 				return (
 					<Collapsible name={companys.name}>
 						<div className='company-text'>
@@ -42,7 +43,10 @@ function FetchData() {
 							</p>
 						</div>
 						<div className='map'>
-							<CompanyMap />
+							<CompanyMap
+								latitude={companys.latitude}
+								longetude={companys.longetude}
+							/>
 						</div>
 					</Collapsible>
 				)
