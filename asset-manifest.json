@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/sandertonheim.github.io.Bedriftregister/static/js/main.fca02512.js",
-    "index.html": "/sandertonheim.github.io.Bedriftregister/index.html",
-    "main.fca02512.js.map": "/sandertonheim.github.io.Bedriftregister/static/js/main.fca02512.js.map"
+    "main.js": "/Bedriftregister/static/js/main.2aa3f9ae.js",
+    "index.html": "/Bedriftregister/index.html",
+    "main.2aa3f9ae.js.map": "/Bedriftregister/static/js/main.2aa3f9ae.js.map"
   },
   "entrypoints": [
-    "static/js/main.fca02512.js"
+    "static/js/main.2aa3f9ae.js"
   ]
 }
