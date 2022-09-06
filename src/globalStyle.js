@@ -16,19 +16,19 @@ body {
   width: 100%;
 }
 
+
 .list-items {
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.site-content {
+.collapsible {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
-}
-.collapsible {
-  border-bottom: black solid ;
+  flex-wrap: wrap;
 }
 
 .collapsible .content-parent {
@@ -38,14 +38,16 @@ body {
 }
 
 .collapsible .content-parent.show{
-  height:15rem;
-  width: 100%;
-  padding-bottom: 1rem;
+  height:13rem;
+  margin-top: 1rem;
+  background-color: #f6f6f6;
+  border-radius: 1rem;
+  
 }
 
 .map {
   height: 100%;
-  width: 50%;
+  min-width: 50%;
 }
 
 .MapStyle {
@@ -57,8 +59,9 @@ body {
 .company-text {
   height: 100%;
   max-width: 50%;
-  margin-right: 2rem;
-  
+  p{
+    padding: 1rem;
+  }
 
 }
 

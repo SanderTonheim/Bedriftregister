@@ -14,9 +14,6 @@ function FetchData() {
 	// Compose the URL for your project's endpoint and add the query
 	let URL = `https://${PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${DATASET}?query=${QUERY}`
 
-	// fetch the content
-
-	// const companyName = res.data.
 
 	const getData = () => {
 		axios.get(URL).then((res) => {
@@ -50,27 +47,3 @@ function FetchData() {
 }
 
 export default FetchData
-
-// fetch(URL)
-// 	.then((res) => res.json())
-// 	.then(({ result }) => {
-// 		console.log(result, 'results')
-// 		// get the list element, and the first item
-// 		let list = document.querySelector('ul')
-// 		let firstListItem = document.querySelector('li')
-// 		console.log(firstListItem, 'first list item')
-
-// 		if (result.length > 0) {
-// 			// remove the placeholder content
-// 			list.removeChild(firstListItem)
-// 			console.log('first list item removed')
-
-// 			result.forEach((bedrift) => {
-// 				const listItem = document.createElement('div')
-// 				listItem.textContent = bedrift.name
-// 				list.append(listItem)
-// 				// return { listItem }
-// 			})
-// 			return
-// 		}
-// 	})
