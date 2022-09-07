@@ -4,19 +4,24 @@ import icon from '../asests/arrow.png'
 
 export const Collapsible = ({ children, name }) => {
 	const [isOpen, setIsOpen] = useState(false)
+	const [arrowOpen, setArrowOpen] = useState(false)
 
 	return (
 		<div className='collapsible'>
 			<div className='list-items'>
 				<h1>{name}</h1>
 				<StyledButton className='toggle' onClick={() => setIsOpen(!isOpen)}>
-					Les mer
-					<span className='arrow'>
-						<img src={icon} alt="" />
-				</span>
+					<div
+						className={arrowOpen ? 'arrow-open' : 'arrow-closed'}
+						onClick={() => setArrowOpen(!arrowOpen)}
+					>
+						Les mer
+						<img src={icon} alt='pic' />
+					</div>
+					
 				</StyledButton>
 			</div>
-			<div className={isOpen ? 'content-parent show' : 'content-parent'}>
+			<div className={isOpen ? 'content-parent show ' : 'content-parent '}>
 				<StyledContent className='content'>{children}</StyledContent>
 			</div>
 		</div>
