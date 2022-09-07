@@ -1,0 +1,16 @@
+import { StyledNav, StyledUl } from '../style/navBar.styled'
+import logo from '../asests/BG-removed-logo.png'
+
+export const NavBar = () => {
+	return (
+		<StyledNav>
+			<img src={logo} alt="" />
+			<StyledUl>
+				<li>Hjem</li>
+				<li>Om oss</li>
+				<li>aktiviteter</li>
+				<li>Kommune</li>
+			</StyledUl>
+		</StyledNav>
+	)
+}
