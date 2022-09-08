@@ -9,16 +9,6 @@ export const StyledButton = styled.button`
 	justify-content: space-between;
 	border: none;
 	background: transparent;
-	color: white;
-	
-
-
+	color: #fff;
 `
-export const StyledContent = styled.div`
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-direction: column-reverse;
-	justify-content: space-between;
-	
-`
+export const StyledContent = styled.div``

@@ -5,7 +5,7 @@ export const NavBar = () => {
 	return (
 		<StyledNav>
 			<img src={logo} alt="" />
-			<StyledUl>
+			<StyledUl className='ul'>
 				<li>Hjem</li>
 				<li>Om oss</li>
 				<li>aktiviteter</li>

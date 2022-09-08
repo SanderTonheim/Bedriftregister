@@ -14,4 +14,17 @@ export const StyledContentContainer = styled.div`
 		margin-top: 5rem;
 		font-weight: 600;
 	}
+
+	@media only screen and (max-width: 425px) {
+		ul,
+		li {
+			color: blue;
+		}
+
+		> h1 {
+			margin-top: 1rem;
+		}
+
+		max-width: 90%;
+	}
 `

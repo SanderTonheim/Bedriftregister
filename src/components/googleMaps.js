@@ -12,7 +12,7 @@ export const CompanyMap = ({ latitude, longetude }) => {
 	}
 	console.log(Cordinates)
 	return (
-		<div className='MapStyle'>
+		<>
 			<GoogleMap
 				center={Cordinates}
 				zoom={15}
@@ -26,6 +26,6 @@ export const CompanyMap = ({ latitude, longetude }) => {
 			>
 				<Marker position={Cordinates} />
 			</GoogleMap>
-		</div>
+		</>
 	)
 }
