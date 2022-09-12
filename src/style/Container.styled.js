@@ -8,8 +8,7 @@ export const StyledContentContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 4rem;
-	padding-bottom: 10rem;
-
+	padding-bottom: 5rem;
 	> h1 {
 		margin-top: 5rem;
 		font-weight: 600;

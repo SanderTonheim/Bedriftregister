@@ -1,4 +1,5 @@
 import FetchData from './components/fetchData'
+import Registrate from './components/registrate'
 import ScreenSize from './components/ScreenSize'
 import { GlobalStyle } from './globalStyle'
 import { StyledContentContainer } from './style/Container.styled'
@@ -12,6 +13,7 @@ function App() {
 				<h1>Bedriftsregister</h1>
 				<FetchData />
 			</StyledContentContainer>
+			<Registrate />
 		</>
 	)
 }

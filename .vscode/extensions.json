@@ -1,6 +1,3 @@
 {
-	"recommendations": [
-		"styled-components.vscode-styled-components",
-		"esbenp.prettier-vscode"
-	]
+	"recommendations": ["styled-components.vscode-styled-components"]
 }
