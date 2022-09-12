@@ -7,8 +7,6 @@ export const Collapsible = ({ children, name }) => {
 	const [arrowOpen, setArrowOpen] = useState(false)
 
 	const parentRef = useRef()
-	if (parentRef.current)
-	console.log(parentRef.current.scrollHeight);
 	return (
 		<div className='collapsible'>
 			<div className='list-items'>
@@ -18,8 +16,8 @@ export const Collapsible = ({ children, name }) => {
 						className={arrowOpen ? 'arrow-open' : 'arrow-closed'}
 						onClick={() => setArrowOpen(!arrowOpen)}
 					>
-						<img src={icon} alt='pic' />
 						Les mer
+						<img src={icon} alt='pic' />
 					</div>
 				</StyledButton>
 			</div>

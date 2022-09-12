@@ -14,7 +14,6 @@ function FetchData() {
 	// Compose the URL for your project's endpoint and add the query
 	let URL = `https://${PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${DATASET}?query=${QUERY}`
 
-
 	const getData = () => {
 		axios.get(URL).then((res) => {
 			setdata(res.data.result)
@@ -27,17 +26,16 @@ function FetchData() {
 	return (
 		<div className='site-content'>
 			{data.map((companys) => {
-				console.log(companys.Text)
 				return (
 					<Collapsible name={companys.name}>
-						<div className='company-text'>
-							<p>{companys.Text}</p>
-						</div>
 						<div className='map'>
 							<CompanyMap
 								latitude={companys.latitude}
 								longetude={companys.longetude}
 							/>
+						</div>
+						<div className='company-text'>
+							<p>{companys.Text}</p>
 						</div>
 					</Collapsible>
 				)

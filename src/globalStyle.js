@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
-
 export const GlobalStyle = createGlobalStyle` 
+
 
 @media only screen and (max-width: 1920px) {
   
@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     color:#f1f0f0;
+    font-family: 'Roboto';
     
   }
   html {
@@ -40,7 +41,6 @@ export const GlobalStyle = createGlobalStyle`
 
 
   .collapsible {
-    /* background-color: #2A2A34; */
     background: rgba(255, 255, 255, 0.15);
   	border-radius: 16px;
   	box-shadow: 0 4px 30px hsla(0, 0%, 0%, 0.1);
@@ -53,6 +53,7 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
   }
 
@@ -82,9 +83,9 @@ export const GlobalStyle = createGlobalStyle`
 
   .toggle {
     display: flex;
-    justify-content: center;
     width: fit-content;
     margin: 0%;
+    height: fit-content;
 
   }
 
@@ -107,11 +108,10 @@ export const GlobalStyle = createGlobalStyle`
     transition:  ease .5s;
     rotate: 180deg;
   }
-
   }
 
-  
-
 }
+
+
   
 `
