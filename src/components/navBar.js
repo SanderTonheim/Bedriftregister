@@ -1,16 +1,18 @@
 import { StyledNav, StyledUl } from '../style/navBar.styled'
 import logo from '../asests/BG-removed-logo.png'
-import menu from '../asests/menuIcon.png'
 
 export const NavBar = () => {
 	return (
-		<StyledNav>
-			<img src={logo} alt='' />
-			<StyledUl className='ul'>
+		<StyledNav className='Navbar'>
+			<div className='navbar-logo'>
+				<img src={logo} alt='' />
+				<p>Bjørnafjorden Kommune</p>
+			</div>
+			<StyledUl className='Navbar-ul'>
 				<li>Hjem</li>
-				<li>Om oss</li>
-				<li>aktiviteter</li>
-				<li>Kommune</li>
+				<li>Om Oss</li>
+				<li>Aktiviteter</li>
+				<li>Næringsliv</li>
 			</StyledUl>
 		</StyledNav>
 	)

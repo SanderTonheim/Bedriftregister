@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/Bedriftregister/static/js/main.47bc33ee.js",
+    "main.js": "/Bedriftregister/static/js/main.5de497a4.js",
     "static/media/BG-removed-logo.png": "/Bedriftregister/static/media/BG-removed-logo.c7777c3c1b7f1451ebe1.png",
     "index.html": "/Bedriftregister/index.html",
-    "main.47bc33ee.js.map": "/Bedriftregister/static/js/main.47bc33ee.js.map"
+    "main.5de497a4.js.map": "/Bedriftregister/static/js/main.5de497a4.js.map"
   },
   "entrypoints": [
-    "static/js/main.47bc33ee.js"
+    "static/js/main.5de497a4.js"
   ]
 }

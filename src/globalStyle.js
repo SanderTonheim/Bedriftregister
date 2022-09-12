@@ -31,7 +31,26 @@ export const GlobalStyle = createGlobalStyle`
     background-position: center;
   }
 
-
+  .navbar-logo {
+    flex-wrap: nowrap;
+    height: 100%;
+    width:fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    img {
+      height: 100%;
+    }
+    
+  }
+  
+  
+  .Navbar-ul {
+    margin: 0%;
+  }
+  
+  
   .site-content {
     display: flex;
     flex-direction: column;
@@ -54,15 +73,19 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
   }
+  
+.content {
+  margin-top: 1.5rem
+}
 
-   .collapsible .content-parent {
+  .collapsible .content-parent {
     height: 0;
     overflow: hidden;
     transition: height ease-in 500ms;
-
-
+    
+    
   }
 
   .map {
@@ -71,8 +94,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 
 
-
-  .company-text {
+    
+    .company-text {
     height: fit-content;
     max-width: 100%;
     p{
@@ -110,8 +133,24 @@ export const GlobalStyle = createGlobalStyle`
   }
   }
 
+
 }
+	@media only screen and (max-width: 425px) {
 
+    .Navbar-ul {
+      display: none;
 
+    }
+    
+	}
+
+	@media screen and (max-width: 426px) {
+		.Navbar-ul {
+      display: none;
+    }
+	}
   
-`
+  
+  
+  
+  `

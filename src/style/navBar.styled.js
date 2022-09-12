@@ -24,11 +24,6 @@ export const StyledUl = styled.ul`
 	color: #ff8993;
 	margin: auto 2rem;
 	
-	@media only screen and (max-width: 425px) {
-		
-		width: 100%;
-		margin: 0%;
 
-		
-	}
-	`
+
+`
