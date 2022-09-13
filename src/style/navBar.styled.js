@@ -23,7 +23,4 @@ export const StyledUl = styled.ul`
 	align-items: center;
 	color: #ff8993;
 	margin: auto 2rem;
-	
-
-
 `
