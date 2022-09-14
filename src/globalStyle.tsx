@@ -124,6 +124,7 @@ export const GlobalStyle = createGlobalStyle`
 
   .arrow-open {
     display: flex;
+    align-items: flex-end;
     gap: .5rem;
   
   }

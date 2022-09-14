@@ -2,7 +2,8 @@
 	"compilerOptions": {
 		"target": "ES2017",
 		"watch": true,
-		"lib": ["dom", "ESNext"],
+		"lib": ["dom"],
+		"allowUnreachableCode": true,
 		"rootDir": "./src",
 		"allowJs": true,
 		"skipLibCheck": true,
