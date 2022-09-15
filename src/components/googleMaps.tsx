@@ -1,19 +1,26 @@
 import { useJsApiLoader, GoogleMap, Marker } from '@react-google-maps/api'
+import { REACT_APP_GOOGLE_MAPS_API_KEY } from '../modules/key'
 
-export const CompanyMap = ({ latitude, longetude }) => {
-	const Cordinates = { lat: latitude, lng: longetude }
+interface Props {
+	latitude: number
+	longetude: number
+}
 
+export const CompanyMap = ({ latitude, longetude }: Props): Props | any => {
+	const cord = { lat: latitude, lng: longetude }
 	const { isLoaded } = useJsApiLoader({
-		googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+		googleMapsApiKey: REACT_APP_GOOGLE_MAPS_API_KEY,
 	})
 	if (!isLoaded) {
-		const errorMessage = 'faild to load'
-		return errorMessage
+		const errorMessage = 'Somethin went wrong'
+		return console.log(errorMessage)
 	}
+	console.log('Sucssess')
+
 	return (
 		<>
 			<GoogleMap
-				center={Cordinates}
+				center={cord}
 				zoom={15}
 				mapContainerStyle={{ height: '100%', width: '100%' }}
 				options={{
@@ -23,7 +30,7 @@ export const CompanyMap = ({ latitude, longetude }) => {
 					streetViewControl: false,
 				}}
 			>
-				<Marker position={Cordinates} />
+				<Marker position={cord} />
 			</GoogleMap>
 		</>
 	)

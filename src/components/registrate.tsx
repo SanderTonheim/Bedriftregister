@@ -7,7 +7,7 @@ function Registrate() {
 	const [gender, setGender] = useState('')
 	const [message, setMessage] = useState('')
 
-	const handleSubmit = async (e) => {
+	const handleSubmit = async (e: { preventDefault: () => void }) => {
 		e.preventDefault()
 		try {
 			const res = await fetch('https://httpbin.org/post', {

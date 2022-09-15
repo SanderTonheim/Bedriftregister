@@ -1,11 +1,18 @@
 import { StyledButton, StyledContent } from '../style/collapsible.styled'
 import { useState, useRef } from 'react'
+import React from 'react'
 import icon from '../asests/arrow.png'
 
-export const Collapsible = ({ children, name }) => {
+interface Props {
+	children: any
+	name: string
+}
+
+export const Collapsible: React.FC<Props> = ({ children, name }) => {
 	const [isOpen, setIsOpen] = useState(false)
 	const [arrowOpen, setArrowOpen] = useState(false)
-	const parentRef = useRef()
+	const parentRef = useRef() as React.MutableRefObject<HTMLInputElement>
+
 	return (
 		<div className='collapsible'>
 			<div className='list-items'>

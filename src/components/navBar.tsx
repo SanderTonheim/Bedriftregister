@@ -1,6 +1,5 @@
 import { StyledNav, StyledUl } from '../style/navBar.styled'
 import logo from '../asests/BG-removed-logo.png'
-import React from 'react'
 
 export const NavBar = () => {
 	return (

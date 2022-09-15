@@ -16,26 +16,27 @@ function FetchData() {
 
 	const getData = () => {
 		axios.get(URL).then((res) => {
-			setdata(res.data.result)
+			return setdata(res.data.result)
 		})
 	}
 	useEffect(() => {
 		getData()
+		//eslint-disable-next-line
 	}, [])
 
 	return (
 		<div className='site-content'>
-			{data.map((companys) => {
+			{data.map((result: any) => {
 				return (
-					<Collapsible name={companys.name}>
+					<Collapsible name={result.name}>
 						<div className='map'>
 							<CompanyMap
-								latitude={companys.latitude}
-								longetude={companys.longetude}
+								latitude={result.latitude}
+								longetude={result.longetude}
 							/>
 						</div>
 						<div className='company-text'>
-							<p>{companys.Text}</p>
+							<p>{result.Text}</p>
 						</div>
 					</Collapsible>
 				)
@@ -43,5 +44,4 @@ function FetchData() {
 		</div>
 	)
 }
-
 export default FetchData

@@ -3,7 +3,6 @@ import Registrate from './components/registrate'
 import ScreenSize from './components/ScreenSize'
 import { GlobalStyle } from './globalStyle'
 import { StyledContentContainer } from './style/Container.styled'
-import React from 'react'
 
 function App() {
 	return (

@@ -22,14 +22,5 @@ export default function ScreenSize() {
 		}
 	}, [windowDimenion])
 
-	return (
-		<NavBar ScreenSize={windowDimenion}>
-			<p>
-				Width: <strong>{windowDimenion.winWidth}</strong>
-			</p>
-			<p>
-				Height: <strong>{windowDimenion.winHeight}</strong>
-			</p>
-		</NavBar>
-	)
+	return <NavBar />
 }
