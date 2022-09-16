@@ -1,7 +1,7 @@
 {
 	"name": "beriftregister",
 	"version": "0.1.0",
-	"homepage": "https://sandertonheim.github.io/Bedriftregister/",
+	"homepage": "https://sandertonheim.github.io/Bedriftregister",
 	"private": true,
 	"dependencies": {
 		"@react-google-maps/api": "^2.12.2",
