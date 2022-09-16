@@ -1,25 +1,37 @@
+// {
+// 	"compilerOptions": {
+// 		"target": "ES2017",
+// 		"watch": true,
+// 		"lib": ["dom"],
+// 		"allowUnreachableCode": true,
+// 		"allowJs": true,
+// 		"skipLibCheck": true,
+// 		"esModuleInterop": true,
+// 		"allowSyntheticDefaultImports": true,
+// 		"strict": true,
+// 		"forceConsistentCasingInFileNames": true,
+// 		"noFallthroughCasesInSwitch": true,
+// 		"module": "CommonJS",
+// 		"moduleResolution": "node",
+// 		"resolveJsonModule": true,
+// 		"isolatedModules": true,
+// 		"noEmit": true,
+// 		"jsx": "react-jsx",
+// 		"rootDir": "./src",
+// 		"outDir": "./ts-dist",
+// 		"skipDefaultLibCheck": true
+// 	},
+// 	"exclude": ["./node_modules"]
+// }
 {
 	"compilerOptions": {
-		"target": "ES2017",
-		"watch": true,
-		"lib": ["dom"],
-		"allowUnreachableCode": true,
-		"allowJs": true,
-		"skipLibCheck": true,
-		"esModuleInterop": true,
-		"allowSyntheticDefaultImports": true,
-		"strict": true,
-		"forceConsistentCasingInFileNames": true,
-		"noFallthroughCasesInSwitch": true,
-		"module": "CommonJS",
-		"moduleResolution": "node",
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"noEmit": true,
-		"jsx": "react-jsx",
-		"rootDir": "./src",
-		"outDir": "./ts-dist",
-		"skipDefaultLibCheck": true
+		"module": "commonjs",
+		"target": "es3",
+		"noImplicitAny": false,
+		"outDir": "built",
+		"rootDir": ".",
+		"sourceMap": false,
+		"jsx": "react-jsx"
 	},
-	"exclude": ["./node_modules"]
+	"exclude": ["node_modules"]
 }
