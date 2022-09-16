@@ -1,6 +1,5 @@
 import { StyledButton, StyledContent } from '../style/collapsible.styled'
 import { useState, useRef } from 'react'
-import React from 'react'
 import icon from '../asests/arrow.png'
 
 interface Props {
