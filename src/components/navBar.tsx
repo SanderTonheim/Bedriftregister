@@ -1,5 +1,5 @@
-import { StyledNav, StyledUl } from '../style/navBar.styled'
 import logo from '../asests/BG-removed-logo.png'
+import { StyledNav, StyledUl } from '../style/navBar.styled'
 
 export const NavBar = () => {
 	return (

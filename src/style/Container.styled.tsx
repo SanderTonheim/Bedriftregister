@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const StyledContentContainer = styled.div`
+export const StyledContentContainer: any = styled.div`
 	height: 100%;
 	width: 80rem;
 	max-width: 60%;
@@ -29,6 +29,5 @@ export const StyledContentContainer = styled.div`
 
 	@media screen and (max-width: 426px) {
 		max-width: 90%;
-		
 	}
 `

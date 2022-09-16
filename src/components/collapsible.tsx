@@ -1,6 +1,6 @@
-import { StyledButton, StyledContent } from '../style/collapsible.styled'
 import { useState, useRef } from 'react'
 import icon from '../asests/arrow.png'
+import { StyledButton, StyledContent } from '../style/collapsible.styled'
 
 interface Props {
 	children: any

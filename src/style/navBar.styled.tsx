@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const StyledNav = styled.div`
+export const StyledNav: any = styled.div`
 	height: 4rem;
 	/* From https://css.glass */
 	background: rgba(255, 255, 255, 0.15);
