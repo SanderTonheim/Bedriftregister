@@ -183,6 +183,14 @@ export const GlobalStyle = createGlobalStyle`
       display: none;
 
     }
+    .collapsible   {
+      font-size:.8rem ;
+    }
+
+
+    .navbar-logo p {
+      font-size: 1.4rem;
+    }
     
 	}
 
