@@ -25,13 +25,11 @@
 // }
 {
 	"compilerOptions": {
-		"module": "commonjs",
-		"target": "ES6",
-		"noImplicitAny": false,
-		"outDir": "built",
-		"rootDir": ".",
-		"sourceMap": false,
-		"jsx": "react-jsx"
+		"module": "esnext",
+		"target": "es2015",
+		"jsx": "react-jsx",
+		"strict": true
 	},
+	"include": ["./**/*"],
 	"exclude": ["node_modules"]
 }
