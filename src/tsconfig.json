@@ -4,7 +4,7 @@
 		"watch": true,
 		"lib": ["dom"],
 		"allowUnreachableCode": true,
-		"rootDir": "./src",
+		"rootDir": "/home/sander/Documents/Repositoray/Bedriftregister/src",
 		"allowJs": true,
 		"skipLibCheck": true,
 		"esModuleInterop": true,
