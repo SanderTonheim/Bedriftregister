@@ -4,7 +4,6 @@
 		"watch": true,
 		"lib": ["dom"],
 		"allowUnreachableCode": true,
-		"rootDir": "/home/sander/Documents/Repositoray/Bedriftregister/src",
 		"allowJs": true,
 		"skipLibCheck": true,
 		"esModuleInterop": true,
@@ -17,8 +16,10 @@
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"noEmit": true,
-		"jsx": "react-jsx"
+		"jsx": "react-jsx",
+		"rootDir": "./src",
+		"outDir": "ts-dist"
 	},
-	"include": ["./**/*"],
-	"exclude": [".git", "node_modules"]
+	"include": ["src"],
+	"exclude": ["**/ts-dist/**"]
 }
